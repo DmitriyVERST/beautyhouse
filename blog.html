@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>
+TWINS BEAUTY HOUSE
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='style.css' />
+<script src="jquery-3.7.0.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- http://animate.style -->
+<script src="wow.min.js"></script> <!-- http://wowjs.uk -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="splide.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="slider/fotorama.js"></script>
+<link rel="stylesheet" type="text/css" href="slider/fotorama.css" />
+</head>
+<body>
+	<ul class="top_links for_mobile">
+		<li><a href="">INTRODUCING</a></li>
+		<li><a href="">Our very first facial collab</a></li>
+	</ul>
+	<ul class="top_links for_desctop">
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+	</ul>
+	<div class="header-mobile">
+	<a href="" class="a_logo"><img src="images/logo.svg" class="logo"></a>
+	<a href="" class="cart"><img src="images/cart.svg"><span>1</span></a>
+		<div class="mobile">
+		    <div class="btn_mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <nav>
+		        <div style="width:100%">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О бренде</a></li>
+					<li onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'"><a href="">Услуги</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(1);"></li>
+					<div id="mob_sub1" style="height:auto;width:auto;overflow:auto"></div>
+					<li onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'"><a href="">Продукция</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(2);"></li>
+					<div id="mob_sub2" style="height:auto;width:auto;overflow:auto"></div>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Галерея работ</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				
+		</div>
+		    </nav>
+		    	<ul id="sub1" class="sub_visible" onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'">
+					<li><a href="">Маникюр/Педикюр</a></li>
+					<li><a href="">Массаж</a></li>
+					<li><a href="">Макияж и укладка</a></li>
+					<li><a href="">Волосы</a></li>
+					<li><a href="">Оформление бровей</a></li>
+					<li><a href="">Наращивание ресниц</a></li>
+					<li><a href="">Косметология</a></li>
+					<li><a href="">Депиляция</a></li>
+					<li><a href="">Перманентный макияж</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				<ul id="sub2" class="sub_visible" onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'">
+					<li><a href="">Шампунь</a></li>
+					<li><a href="">Кондиционер</a></li>
+					<li><a href="">Спрей</a></li>
+					<li><a href="">Комплексный уход</a></li>
+					<li><a href="">Наши подборки</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Лучшие товары</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">Все товары</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="fon">
+		<h3>Новостной блог</h3>
+	</div>
+	<script>
+		$('.mobile .btn_mobile').on('click', () => {
+	    $('.mobile div').toggleClass('active');
+	    $('.mobile nav').toggleClass('open');
+	    $('.mobile nav ul').toggleClass('show');
+	});
+	for (let a = 1; a <= $(".mobile ul li").length; a++){
+	    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+	}
+	</script>
+	<div class="blog white_block">
+		<h4>\новости\</h4>
+		<h1>Новостной блог</h1>
+		<h2>TWINS BEAUTY HOUSE</h2>
+		<div class="news">
+			<img src="images/img18.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">Естественность и минимализм - главные тренды последнего времени</span></div>
+			<div class="news_desc">максимально тонкое покрытие nude на ногтях поможет создать тот самый эффект «невидимого» маникюра</div>
+		</div><div class="news">
+				<img src="images/img19.jpg">
+			<div class="news_name article_open"><span class="h_cat">SALE</span><span class="h_cat2">Идеально ровный сияющий тон лица, минимум макияжа глаз...</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img25.jpg">
+			<div class="news_name article_open"><span class="h_cat">SHOP</span><span class="h_cat2">TOKIO HOME- маска для самостоятельного применения и поддержания салонного ухода</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img26.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">средства для укладки, которые мы использовали показали в нашем телеграм канале</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img27.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">небрежная воздушная укладка must have в приближающемся сезоне</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news">
+				<img src="images/img18.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">Естественность и минимализм - главные тренды последнего времени</span></div>
+			<div class="news_desc">максимально тонкое покрытие nude на ногтях поможет создать тот самый эффект «невидимого» маникюра</div>
+		</div><div class="news">
+				<img src="images/img19.jpg">
+			<div class="news_name"><span class="h_cat">SALE</span><span class="h_cat2">Идеально ровный сияющий тон лица, минимум макияжа глаз...</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img25.jpg">
+			<div class="news_name article_open"><span class="h_cat">SHOP</span><span class="h_cat2">TOKIO HOME- маска для самостоятельного применения и поддержания салонного ухода</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img26.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">средства для укладки, которые мы использовали показали в нашем телеграм канале</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div><div class="news2">
+				<img src="images/img27.jpg">
+			<div class="news_name article_open"><span class="h_cat">BEAUTY</span><span class="h_cat2">небрежная воздушная укладка must have в приближающемся сезоне</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div>
+	</div>
+		<div class="box_article_container">
+			<div class="box_article" id="box_article">
+			<img src="images/close.svg" class="article_close">
+			<div style="text-align:left;padding:10px"><img src="images/ring.png" style="vertical-align:middle;"><span style="display:inline-block;vertical-align:middle;font-size:20px;font-weight:600;text-align:left;margin:0px 10px">TWINS BEAUTY HOUSE<br><span style="font-size:16px;font-weight:normal">TWINS SHOP</span></span></div>
+			<div class="box_article_img"><img src="images/img25.jpg" style="width:100%"></div>
+			<div style="padding:15px 15px 25px 15px;">
+				<div style="font-size:18px;text-align:left;font-weight:600;margin:0px 0px 10px 0px">TWINS BEAUTY HOUSE</div>
+				<div style="font-size:16px;text-align:left;color:#272727;" class="filter_scroll blog_scroll">Вы мечтаете о продолжительном эффекте салонного ухода за волосами в домашних условиях? Представляем вам TOKIO HOME – маску, разработанную специально для самостоятельного применения, чтобы поддерживать ваши волосы роскошными, здоровыми и ухоженными, как после посещения салона.</div>
+				<div style="position:absolute;visibility:hidden" class="blog_intro_text">Вы мечтаете о продолжительном эффекте салонного ухода за волосами в домашних условиях? Представляем вам TOKIO HOME – маску, разработанную специально для самостоятельного применения, чтобы поддерживать ваши волосы роскошными, здоровыми и ухоженными, как после посещения салона.</div>
+				<div style="position:absolute;visibility:hidden" class="blog_full_text">Вы мечтаете о продолжительном эффекте салонного ухода за волосами в домашних условиях? Представляем вам TOKIO HOME – маску, разработанную специально для самостоятельного применения, чтобы поддерживать ваши волосы роскошными, здоровыми и ухоженными, как после посещения салона.<br><br><b>Преимущества TOKIO HOME:</b><br><br><b>1. Сохранение Салонного Эффекта:</b><br> Маска создана  с применением тех же передовых технологий и ингредиентов, которые используются в профессиональных процедурах TOKIO INKARAMI. Это позволяет вам продлить эффект салонного ухода на более длительный срок.<br><br><b>2. Сохранение Салонного Эффекта:</b><br> Маска создана  с применением тех же передовых технологий и ингредиентов, которые используются в профессиональных процедурах TOKIO INKARAMI. Это позволяет вам продлить эффект салонного ухода на более длительный срок.</div>
+				<div style="text-align:left;margin:10px 0px 10px 0px;color:#686868"><a style="cursor:pointer;color:#686868;font-size:18px" class="blog_readmore">Читать полностью</a></div>
+				<font style="font-size:14px;color:#686868;float:left">May 7</font>
+			</div>
+			</div>
+		</div>
+	<script>
+		$('.article_close').click(function(){
+		$('.box_article_container').css({'display':'none'});
+		$("body").css({'overflow':'auto'});
+		});
+		$('.article_open').click(function(){
+		$('.box_article_container').css({'display':'block'});
+		$("body").css({'overflow':'hidden'});
+		});
+		window.addEventListener('click', e => { // при клике в любом месте окна браузера
+    const target = e.target; // находим элемент, на котором был клик
+    if (!target.closest('.box_article')&& !target.closest('.article_open')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      //nav.classList.remove('nav_active') // то закрываем окно навигации, удаляя активный класс
+      $('.box_article_container').css({'display':'none'});
+      $("body").css({'overflow':'auto'});
+      //alert("asdf");
+    }
+  })
+	</script>
+	<div class="footer" style="position:relative">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram.svg"></a><a href="#"><img src="images/whatsapp.svg"></a><a href="#"><img src="images/instagram.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+</body>
+</html>

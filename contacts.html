@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>
+TWINS BEAUTY HOUSE
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='style.css' />
+<script src="jquery-3.7.0.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- http://animate.style -->
+<script src="wow.min.js"></script> <!-- http://wowjs.uk -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="splide.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="slider/fotorama.js"></script>
+<link rel="stylesheet" type="text/css" href="slider/fotorama.css" />
+</head>
+<body>
+	<ul class="top_links for_mobile">
+		<li><a href="">INTRODUCING</a></li>
+		<li><a href="">Our very first facial collab</a></li>
+	</ul>
+	<ul class="top_links for_desctop">
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+	</ul>
+	<div class="header-mobile">
+	<a href="" class="a_logo"><img src="images/logo.svg" class="logo"></a>
+	<a href="" class="cart"><img src="images/cart.svg"><span>1</span></a>
+		<div class="mobile">
+		    <div class="btn_mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <nav>
+		        <div style="width:100%">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О бренде</a></li>
+					<li onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'"><a href="">Услуги</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(1);"></li>
+					<div id="mob_sub1" style="height:auto;width:auto;overflow:auto"></div>
+					<li onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'"><a href="">Продукция</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(2);"></li>
+					<div id="mob_sub2" style="height:auto;width:auto;overflow:auto"></div>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Галерея работ</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				
+		</div>
+		    </nav>
+		    	<ul id="sub1" class="sub_visible" onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'">
+					<li><a href="">Маникюр/Педикюр</a></li>
+					<li><a href="">Массаж</a></li>
+					<li><a href="">Макияж и укладка</a></li>
+					<li><a href="">Волосы</a></li>
+					<li><a href="">Оформление бровей</a></li>
+					<li><a href="">Наращивание ресниц</a></li>
+					<li><a href="">Косметология</a></li>
+					<li><a href="">Депиляция</a></li>
+					<li><a href="">Перманентный макияж</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				<ul id="sub2" class="sub_visible" onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'">
+					<li><a href="">Шампунь</a></li>
+					<li><a href="">Кондиционер</a></li>
+					<li><a href="">Спрей</a></li>
+					<li><a href="">Комплексный уход</a></li>
+					<li><a href="">Наши подборки</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Лучшие товары</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">Все товары</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="fon">
+		<h3>Контакты</h3>
+	</div>
+	<script>
+		$('.mobile .btn_mobile').on('click', () => {
+	    $('.mobile div').toggleClass('active');
+	    $('.mobile nav').toggleClass('open');
+	    $('.mobile nav ul').toggleClass('show');
+	});
+	for (let a = 1; a <= $(".mobile ul li").length; a++){
+	    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+	}
+	</script>
+	<div class="contacts white_block" style="max-width:100%;overflow:hidden">
+		<h4>\контакты\</h4>
+		<h1>Как проехать</h1>
+		<h2>И связаться с нами</h2>
+		<span class="address address mob6">Новосибирск, ул. Ленина, 1 (этаж 1)</span>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A184716981b03c9e4977a32bcb03adc464f4c48f46c0414292d515ae508d76420&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+		<span style="max-width:90%" class="karta_mob">
+			Мы находимся в самом центре Новосибирска, до нас легко проехать и у нас есть удобная парковка для наших клиентов
+		</span>
+		<div class="social_btns karta_mob2">
+			<h1>Мы с радостью ответим</h1>
+			<h2>На все ваши вопросы</h2>
+			<div class="social_btns_box">
+			<a href="#" class="whatsapp2"><font>whatsapp</font></a><a href="#" class="instagram2"><font>instagram</font></a><a href="#" class="telegram2"><font>telegram</font></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer" style="position:relative">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram.svg"></a><a href="#"><img src="images/whatsapp.svg"></a><a href="#"><img src="images/instagram.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+</body>
+</html>

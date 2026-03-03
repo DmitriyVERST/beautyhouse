@@ -1,0 +1,334 @@
+<html>
+<head>
+<title>
+TWINS BEAUTY HOUSE
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='style.css' />
+<script src="jquery-3.7.0.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- http://animate.style -->
+<script src="wow.min.js"></script> <!-- http://wowjs.uk -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="splide-extension-auto-scroll.min.js"></script>
+<script src="splide.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="slider/fotorama.js"></script>
+<link rel="stylesheet" type="text/css" href="slider/fotorama.css" />
+<style>
+.usl_up{
+	animation: animation2 0.4s forwards linear;
+}
+.usl_start{
+	visibility:hidden;transition:1s;position:relative;width:100%;z-index:101;background-color:#fff!important;
+}
+
+@keyframes animation2 {
+  0%{
+    transform: translateY(500px);
+  }
+  
+  100%{
+    transform: translateY(0px);
+  }
+}
+</style>
+</head>
+<body>
+	<ul class="top_links for_mobile">
+		<li><a href="">INTRODUCING</a></li>
+		<li><a href="">Our very first facial collab</a></li>
+	</ul>
+	<ul class="top_links for_desctop">
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+	</ul>
+	<div class="header-mobile">
+	<a href="" class="a_logo"><img src="images/logo.svg" class="logo"></a>
+	<a href="" class="cart"><img src="images/cart.svg"><span>1</span></a>
+		<div class="mobile">
+		    <div class="btn_mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <nav>
+		        <div style="width:100%">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О бренде</a></li>
+					<li onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'"><a href="">Услуги</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(1);"></li>
+					<div id="mob_sub1" style="height:auto;width:auto;overflow:auto"></div>
+					<li onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'"><a href="">Продукция</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(2);"></li>
+					<div id="mob_sub2" style="height:auto;width:auto;overflow:auto"></div>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Галерея работ</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				
+		</div>
+		    </nav>
+		    	<ul id="sub1" class="sub_visible" onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'">
+					<li><a href="">Маникюр/Педикюр</a></li>
+					<li><a href="">Массаж</a></li>
+					<li><a href="">Макияж и укладка</a></li>
+					<li><a href="">Волосы</a></li>
+					<li><a href="">Оформление бровей</a></li>
+					<li><a href="">Наращивание ресниц</a></li>
+					<li><a href="">Косметология</a></li>
+					<li><a href="">Депиляция</a></li>
+					<li><a href="">Перманентный макияж</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				<ul id="sub2" class="sub_visible" onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'">
+					<li><a href="">Шампунь</a></li>
+					<li><a href="">Кондиционер</a></li>
+					<li><a href="">Спрей</a></li>
+					<li><a href="">Комплексный уход</a></li>
+					<li><a href="">Наши подборки</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Лучшие товары</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">Все товары</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="fon">
+		<h3>Услуги</h3>
+	</div>
+	<script>
+		$('.mobile .btn_mobile').on('click', () => {
+	    $('.mobile div').toggleClass('active');
+	    $('.mobile nav').toggleClass('open');
+	    $('.mobile nav ul').toggleClass('show');
+	});
+	for (let a = 1; a <= $(".mobile ul li").length; a++){
+	    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+	}
+	</script>
+	<div class="line1" id="line1">
+			<p>TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> МАНИКЮР <img src="images/mini_logo.svg"></p>
+		</div>
+	<div class="menu_uslugi">
+		<ul><li><a href="https://site.workenter.ru/uslugi2.html" class="active">Маникюр/Педикюр</a></li><li><a href="https://site.workenter.ru/uslugi2.html">массаж</a></li><li><a href="https://site.workenter.ru/uslugi2.html">волосы</a></li><li><a href="https://site.workenter.ru/uslugi2.html">оформление бровей</a></li><li><a href="https://site.workenter.ru/uslugi2.html">наращивание ресниц</a></li><li><a href="https://site.workenter.ru/uslugi2.html">макияж и укладка</a></li><li><a href="https://site.workenter.ru/uslugi2.html">косметология</a></li><li><a href="https://site.workenter.ru/uslugi2.html">депиляция</a></li><li><a href="https://site.workenter.ru/uslugi2.html">перманентный макияж</a></li></ul>
+	</div>
+		<div class="box_uslugi img_pc">
+			<div class="box1_uslugi">
+				<div class="usl_scroll" style="height:600px">
+				<table>
+					<tr>
+						<td class="td_header"><img src="images/mini_logo.svg">Маникюр женский</td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Маникюр женский</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Японский маникюр</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Пилочный маникюр</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Лечебное покрытие</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Покрытие лаком</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">IBX</a></td>
+					</tr>
+					<tr>
+						<td class="td_header"><img src="images/mini_logo.svg">Маникюр + Покрытие</td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">один тон</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">френч</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">база + топ</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Наращивание ногтей</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">коррекция наращивания ногтей</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Укрепление гелем (Моделирование)</a></td>
+					</tr>
+					<tr>
+						<td class="td_header" onclick="show_usl(1);" class="usl_a"><img src="images/mini_logo.svg">Маникюр + Покрытие</td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">один тон</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">френч</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">база + топ</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Наращивание ногтей</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">коррекция наращивания ногтей</a></td>
+					</tr>
+					<tr>
+						<td><a onclick="show_usl(1,this);" class="usl_a">Укрепление гелем (Моделирование)</a></td>
+					</tr>
+				</table>
+				</div>
+			</div>
+			<div class="box2_uslugi">
+				<div style="display:inline-block;z-index:100;position:absolute;left:15vw;top:45%;color:#841A10;font-size:2vw">ВЫБЕРИТЕ УСЛУГУ</div>
+				<div id="usl1" class="usl_start">
+					<div class="btn_uslugi"><img src="images/mini_logo.svg">1.5 часа</div><br>
+					<div class="h_usluga">Маникюр женский</div>
+					<p>Комплекс косметических процедур, направленных на очищение, оздоровление, запуск обменных процессов и регенерации кожи</p>
+					<div class="btn_uslugi_bottom">
+						<a href="#" class="btn_uslugi2">мастер<br>2000 р<br><span class="mini_logo"></span><span class="mini_logo"></span><span class="mini_logo"></span></a><a href="#" class="btn_uslugi2">мастер-эксперт<br>3000 р<br><span class="mini_logo"></span><span class="mini_logo"></span><span class="mini_logo"></span></a><a href="#" class="btn_uslugi2">топ-мастер<br>5000 р<br><span class="mini_logo"></span><span class="mini_logo"></span><span class="mini_logo"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="sertificat white_block img_pc" style="padding-bottom:0px">
+		<div class="akciya2">
+		<div class="slide2 splide">
+	            <div class="splide__track">
+		            <div class="splide__list">
+		                <div class="splide__slide"><a href="#" class="a1"><img src="images/pic1.jpg" class="img1"><span class="text"></span></a></div>
+		                <div class="splide__slide"><a href="#" class="a1"><img src="images/pic2.jpg" class="img2"><span class="text"></span></span></a></div>
+		                <div class="splide__slide"><a href="#" class="a1"><img src="images/pic3.jpg" class="img2"><span class="text"></span></a></div>
+		                <div class="splide__slide"><a href="#" class="a1"><img src="images/pic4.jpg" class="img2"><span class="text"></span></a></div>
+		                <div class="splide__slide"><a href="#" class="a1"><img src="images/pic5.jpg" class="img2"><span class="text"></span></a></div>
+	                </div>
+	            </div>
+	      	</div>
+	        <script>
+	          document.addEventListener( 'DOMContentLoaded', () => {
+	            var newslide = new Splide('.slide2', {
+	                type   : 'loop',
+					  drag   : 'free',
+					  focus  : 'center',
+					  
+					  autoScroll: {
+					    speed: 1,
+					    pauseOnHover: false,
+					  },
+					  arrows: false,
+	                pagination: false,
+	                autoWidth: true,
+	                autoplay: false,
+	                interval: 3000,
+	                wheel: false,
+	                wheelSleep: 300,
+	                releaseWheel: false,
+	                pauseOnHover: false,
+	                focus: 0,
+	                omitEnd:false,
+	            }).mount(window.splide.Extensions)
+	            
+	          } )
+	        </script>
+	</div>
+	</div>
+	<div class="footer white_block img_pc" style="position:relative;padding-top:0px">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram_red.svg"></a><a href="#"><img src="images/whatsapp_red.svg"></a><a href="#"><img src="images/instagram_red.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+	
+	<div class="footer red_block img_mobile" style="position:relative;">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram.svg"></a><a href="#"><img src="images/whatsapp.svg"></a><a href="#"><img src="images/instagram.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+</body>
+</html>

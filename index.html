@@ -1,0 +1,668 @@
+<html>
+<head>
+<title>
+TWINS BEAUTY HOUSE
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='style.css' />
+<script src="jquery-3.7.0.min.js"></script>
+<script src="scripts.js"></script>
+<script src="SmoothScroll.js"></script>
+<script src="parallax.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- http://animate.style -->
+<script src="wow.min.js"></script> <!-- http://wowjs.uk -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="splide.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="splide-extension-auto-scroll.min.js"></script>
+<script src="slider/fotorama.js"></script>
+<link rel="stylesheet" type="text/css" href="slider/fotorama.css" />
+</head>
+<body>
+	<ul class="top_links for_mobile">
+		<li><a href="">INTRODUCING</a></li>
+		<li><a href="">Our very first facial collab</a></li>
+	</ul>
+	<ul class="top_links for_desctop">
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+	</ul>
+	<div class="header-mobile">
+	<a href="" class="a_logo"><img src="images/logo.svg" class="logo"></a>
+	<a href="" class="cart"><img src="images/cart.svg"><span>1</span></a>
+		<div class="mobile">
+		    <div class="btn_mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <nav>
+		        <div style="width:100%">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О бренде</a></li>
+					<li onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'"><a href="">Услуги</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(1);"></li>
+					<div id="mob_sub1" style="height:auto;width:auto;overflow:auto"></div>
+					<li onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'"><a href="">Продукция</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(2);"></li>
+					<div id="mob_sub2" style="height:auto;width:auto;overflow:auto"></div>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Галерея работ</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				
+		</div>
+		    </nav>
+		    	<ul id="sub1" class="sub_visible" onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'">
+					<li><a href="">Маникюр/Педикюр</a></li>
+					<li><a href="">Массаж</a></li>
+					<li><a href="">Макияж и укладка</a></li>
+					<li><a href="">Волосы</a></li>
+					<li><a href="">Оформление бровей</a></li>
+					<li><a href="">Наращивание ресниц</a></li>
+					<li><a href="">Косметология</a></li>
+					<li><a href="">Депиляция</a></li>
+					<li><a href="">Перманентный макияж</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				<ul id="sub2" class="sub_visible" onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'">
+					<li><a href="">Шампунь</a></li>
+					<li><a href="">Кондиционер</a></li>
+					<li><a href="">Спрей</a></li>
+					<li><a href="">Комплексный уход</a></li>
+					<li><a href="">Наши подборки</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Лучшие товары</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">Все товары</a></li>
+				</ul>
+		</div>
+		
+	</div>
+	<script>
+		$('.mobile .btn_mobile').on('click', () => {
+	    $('.mobile div').toggleClass('active');
+	    $('.mobile nav').toggleClass('open');
+	    $('.mobile nav ul').toggleClass('show');
+	});
+	for (let a = 1; a <= $(".mobile ul li").length; a++){
+	    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+	}
+	</script>
+	<div class="top_div for_mobile">
+	<span class="e1" >Вы, совершенно точно<br> влюбитесь в нашу студию</span><br>
+		<center>
+		<div class="e2" >
+			<img src="images/img_1.png" class="e3" >
+			<img src="images/img_2.jpg" class="e4" >
+			<img src="images/img_3.jpg" class="e5" >
+			<img src="images/img_4.jpg" class="e6" >
+		</div>
+		</center>
+		<a href="" class="cta_mob e7" ><img src="images/cta.png"></a>
+	</div>
+	<div class="slider for_desctop e8 parallax-window" >
+		<span class="e9" >Вы, совершенно точно<br> влюбитесь в нашу студию</span><br>
+		<center>
+		<div class="e10 " data-parallax="scroll">
+			<img src="images/img_1.png" class="e11" id="e11">
+			<img src="images/img_2.jpg" class="e12" id="e12">
+			<img src="images/img_3.jpg" class="e13" id="e13">
+			<img src="images/img_4.jpg" class="e14" id="e14">
+		</div>
+		</center>
+		<a href="" class="cta"><img src="images/cta.png"></a>
+	</div>
+	<div class="follow-cursor"><span>УЗНАТЬ<br>ПОДРОБНЕЕ</span></div>
+	<div class="line1">
+		<p>TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg"></p>
+	</div>
+	<div class="akciya">
+		<a href="#" class="a1"><img src="images/img1.jpg" class="img1"><span class="text">-10% на второе посещение при записи на другое направление<br><span class="cena1">*акция действует для новых клиентов</span><span class="cena2"></span></span></a><a href="#" class="a1"><img src="images/img2.jpg" class="img2"><span class="text">комплекс ламинирование ресниц<br>  + оформление бровей<br><span class="cena1">3.300 ₽</span><span class="cena2">3.600 ₽</span></span></a>
+		<!--<a href="#" class="podrobnee">&nbsp;</a>-->
+	</div>
+	<div class="about_brend red_block">
+		<h4>\о бренде\</h4>
+		<table width="100%" border="1" class="img_pc">
+			<tr>
+				<td rowspan="3" width="35%"><img src="images/img3.png" class="img_pc" width="100%" style="margin-top:45px"></td>
+				<td colspan="3" height="1">
+					<h1>TWINS BEAUTY HOUSE</h1>
+					<h2>Место в которое вы точно влюбитесь</h2>
+				</td>
+			</tr>
+			<tr>
+				<td class="td1" width="30%" height="1"><span style="position:relative;left:-5%">Это история, которая началась в 2014 году и мы пишем её вместе с ВАМИ уже  10 лет. Наша основная миссия, как бы банально она ни звучала, делать всё,  чтобы ВЫ были по-настоящему счастливы в нашем Доме красоты и доверяли  нам самые важные дни своей жизни. Обретали всё больше любви к себе, проводили свои beauty выходные в стенах Twins Beauty House и ощущали себя действительно дома, где Вам всегда рады</span></td>
+				<td width="">&nbsp;</td>
+				<td class="td2" width="10%"><img src="images/img4.jpg" class="img_pc" width="100%"></td>
+			</tr>
+			<tr>
+				<td class="td3" style="vertical-align:bottom">
+					<table style="position:relative;left:-5%;top:10px">
+						<tr>
+							<td>Работаем с<br><span>2014</span></td>
+							<td>Видов&nbsp;услуг<br><span>60+</span></td>
+							<td>Специалистов<br><span>100+</span></td>
+						</tr>
+					</table>
+				</td>
+				<td class="td4" colspan="2"><span>Так как в одном пространстве вы сможете сделать практически весь спектр бьюти услуг и совершенно точно не переживать за качество, так как мы с огромным трепетом создавали нашу команду настоящих профессионалов своего дела</span><br><br>
+			<a href="#" class="readmore_white">Узнать подробнее</a></span></td>
+			</tr>
+		</table>
+		<div class="img_mobile">
+		<h1>TWINS BEAUTY HOUSE</h1>
+		<h2>Место в которое вы точно влюбитесь</h2>
+		<img src="images/img_brend_mob.png" class="img_mobile1">
+		<!--<img src="images/img4.jpg" class="img_mobile2">-->
+		<div class="box1">
+			<!--<img src="images/img4.jpg" class="img_pc">-->
+			<span style="max-width:100%">Это история, которая началась в 2014 году и мы пишем её вместе с ВАМИ уже 10 лет.<br><br>
+Наша основная миссия, как бы банально она ни звучала, делать всё, чтобы ВЫ были по-настоящему счастливы в нашем Доме красоты и доверяли нам самые важные дни своей жизни.<br><br>
+Обретали всё больше любви к себе, проводили свои beauty выходные в стенах Twins Beauty House и ощущали себя действительно дома, где Вам всегда рады</span>
+		</div>
+		<div class="box2">
+			<table>
+				<tr>
+					<td class="mob1">Работаем с<br><span>2014</span></td>
+					<td class="mob1">Видов услуг<br><span>60+</span></td>
+					<td class="mob1">Специалистов<br><span>100+</span></td>
+				</tr>
+			</table>
+			<span>Так как в одном пространстве вы сможете сделать практически весь спектр бьюти услуг и совершенно точно не переживать за качество, так как мы с огромным трепетом создавали нашу команду настоящих профессионалов своего дела<br><br>
+			<a href="#" class="readmore_white">Узнать подробнее</a></span>
+		</div>
+		</div>
+	</div>
+	<div class="uslugi white_block">
+		<h4>\услуги\</h4>
+		<h1>Услуги и прайс</h1>
+		<h2>Широкий спектр услуг</h2>
+		</div>
+		
+		<div class="usl_box pos_sticky mob2">
+			<img src="images/img5.jpg" class="img_pc">
+			<div class="usl_header">
+				<h3>Маникюр</h3>
+				<a href="#" class="readmore img_pc">Подробнее</a>
+			</div><img src="images/img5.jpg" class="img_mobile3">
+			<div class="usl_info">
+				<table>
+					<tr>
+						<td class="usl_name"><a href="">Комбинированный маникюр</a></td>
+						<td class="cena"><span class="cena2">от 200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие</a></td>
+						<td class="cena"><span class="cena2">от 2000 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие (Френч)</a></td>
+						<td class="cena"><span class="cena2">от 4200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр (SMART)</a></td>
+						<td class="cena"><span class="cena2">от 1600 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полупедикюр+покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2100 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр + покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2500 ₽</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="img_mobile usl_readmore"><a href="#" class="readmore mob4">Подробнее</a></div>
+		</div>
+		<div class="usl_box pos_sticky mob3">
+			<img src="images/img5.jpg" class="img_pc">
+			<div class="usl_header">
+				<h3>Макияж</h3>
+				<a href="#" class="readmore img_pc">Подробнее</a>
+			</div>
+			<img src="images/img5.jpg" class="img_mobile3">
+			<div class="usl_info">
+				<table>
+					<tr>
+						<td class="usl_name"><a href="">Комбинированный маникюр</a></td>
+						<td class="cena"><span class="cena2">от 200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие</a></td>
+						<td class="cena"><span class="cena2">от 2000 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие (Френч)</a></td>
+						<td class="cena"><span class="cena2">от 4200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр (SMART)</a></td>
+						<td class="cena"><span class="cena2">от 1600 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полупедикюр+покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2100 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр + покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2500 ₽</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="img_mobile usl_readmore"><a href="#" class="readmore mob4">Подробнее</a></div>
+		</div>
+		<div class="usl_box pos_sticky mob3">
+			<img src="images/img5.jpg" class="img_pc">
+			<div class="usl_header">
+				<h3>Брови</h3>
+				<a href="#" class="readmore img_pc">Подробнее</a>
+			</div>
+			<img src="images/img5.jpg" class="img_mobile3">
+			<div class="usl_info">
+				<table>
+					<tr>
+						<td class="usl_name"><a href="">Комбинированный маникюр</a></td>
+						<td class="cena"><span class="cena2">от 200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие</a></td>
+						<td class="cena"><span class="cena2">от 2000 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие (Френч)</a></td>
+						<td class="cena"><span class="cena2">от 4200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр (SMART)</a></td>
+						<td class="cena"><span class="cena2">от 1600 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полупедикюр+покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2100 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр + покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2500 ₽</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="img_mobile usl_readmore"><a href="#" class="readmore mob4">Подробнее</a></div>
+		</div>
+		<div class="usl_box mob3">
+			<img src="images/img5.jpg" class="img_pc">
+			<div class="usl_header">
+				<h3>Ресницы</h3>
+				<a href="#" class="readmore img_pc">Подробнее</a>
+			</div>
+			<img src="images/img5.jpg" class="img_mobile3">
+			<div class="usl_info">
+				<table>
+					<tr>
+						<td class="usl_name"><a href="">Комбинированный маникюр</a></td>
+						<td class="cena"><span class="cena2">от 200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие</a></td>
+						<td class="cena"><span class="cena2">от 2000 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Снятие + Маникюр + Покрытие (Френч)</a></td>
+						<td class="cena"><span class="cena2">от 4200 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр (SMART)</a></td>
+						<td class="cena"><span class="cena2">от 1600 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полупедикюр+покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2100 ₽</span></td>
+					</tr>
+					<tr>
+						<td class="usl_name"><a href="">Полный педикюр + покрытие+снятие</a></td>
+						<td class="cena"><span class="cena2">от 2500 ₽</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="img_mobile usl_readmore"><a href="#" class="readmore mob4">Подробнее</a></div>
+		<br>
+		<center><a href="#" class="btn1 mob5" style="width:98%;margin-bottom:120px;"><span>Все услуги</span></a></center>
+	</div>
+	<div class="works red_block" style="position:relative;">
+		<h4>\работы\</h4>
+		<h1>Галерея работ</h1>
+		<h2>Наши прекрасные гости</h2>
+		<div class="works_box">
+			<div class="slide1 splide">
+	            <div class="splide__track">
+		            <div class="splide__list">
+		                <div class="splide__slide"><img src="images/img9.jpg" class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.2s"></div>
+		                <div class="splide__slide"><img src="images/img10.jpg" class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.4s"></div>
+		                <div class="splide__slide"><img src="images/img11.jpg" class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.6s"></div>
+		                <div class="splide__slide"><img src="images/img12.jpg" class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.8s"></div>
+		                <div class="splide__slide"><img src="images/img_10.jpg" class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="1s"></div>
+	                </div>
+	            </div>
+	      	</div>
+	        <script>
+	        //import Splide from '@splidejs/splide';
+//import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+	          document.addEventListener( 'DOMContentLoaded', () => {
+	            var newslide = new Splide('.slide1', {
+	            	 type   : 'loop',
+					  drag   : 'free',
+					  focus  : 'center',
+					  
+					  autoScroll: {
+					    speed: 1,
+					    pauseOnHover: false,
+					  },
+					  arrows: false,
+	                pagination: false,
+	                autoWidth: true,
+	                autoplay: false,
+	                interval: 3000,
+	                wheel: false,
+	                wheelSleep: 300,
+	                releaseWheel: false,
+	                pauseOnHover: false,
+	                focus: 0,
+	                omitEnd:false,
+	            }).mount(window.splide.Extensions)
+	            
+	          } )
+	        </script>
+		</div>
+	</div>
+	<div class="products white_block" style="position:relative">
+		<h4>\продукция\</h4>
+		<h1>Twins shop</h1>
+		<h2>Уходовая косметика</h2>
+		<div class="products_box b1">
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+					<div class="sale"><span class="sale1">50%</span><span class="sale2">SALE</span></div>
+				</div>
+				<div class="pr_name">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ТЕЛА И ЛИЦА</div>
+				<div class="pr_desc">HERBA SENSE avocado coconut</div>
+				<div class="cena">
+					<span class="pr_cena1">578 ₽</span>
+					<span class="pr_cena2">433 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ТЕЛА И ЛИЦА</div>
+				<div class="pr_desc">HERBA SENSE avocado coconut</div>
+				<div class="cena">
+					<span class="pr_cena1">578 ₽</span>
+					<span class="pr_cena2">433 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ТЕЛА И ЛИЦА</div>
+				<div class="pr_desc">HERBA SENSE avocado coconut</div>
+				<div class="cena">
+					<span class="pr_cena1">578 ₽</span>
+					<span class="pr_cena2">433 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">УВЛАЖНЯЮЩИЙ КРЕМ ДЛЯ ТЕЛА И ЛИЦА</div>
+				<div class="pr_desc">HERBA SENSE avocado coconut</div>
+				<div class="cena">
+					<span class="pr_cena1">578 ₽</span>
+					<span class="pr_cena2">433 ₽</span>
+				</div>
+			</div>
+		</div>
+		<center><a href="#" class="btn1"><span>Все товары</span></a></center>
+	</div>
+	<div class="otzivi red_block" style="position:relative">
+		<h4>\отзывы\</h4>
+		<h1>Наши прекрасные</h1>
+		<h2>посетители и их отзывы</h2>
+		<div class="otzivi_box">
+			<div class="slide2 splide">
+	            <div class="splide__track">
+		            <div class="splide__list">
+		                <div class="splide__slide"><img src="images/img13.png"></div>
+		                <div class="splide__slide"><img src="images/img14.png"></div>
+		                <div class="splide__slide"><img src="images/img15.png"></div>
+		                <div class="splide__slide"><img src="images/img16.png"></div>
+		                <div class="splide__slide"><img src="images/img14.png"></div>
+		                <div class="splide__slide"><img src="images/img15.png"></div>
+	                </div>
+	            </div>
+	      	</div>
+	        <script>
+	          document.addEventListener( 'DOMContentLoaded', () => {
+	            var newslide = new Splide('.slide2', {
+	            	type   : 'loop',
+					  drag   : 'free',
+					  focus  : 'center',
+					  
+					  autoScroll: {
+					    speed: 1,
+					    pauseOnHover: false,
+					  },
+					  arrows: false,
+	                pagination: false,
+	                autoWidth: true,
+	                autoplay: false,
+	                interval: 3000,
+	                wheel: false,
+	                wheelSleep: 300,
+	                releaseWheel: false,
+	                pauseOnHover: false,
+	                focus: 0,
+	                omitEnd:false,
+	                breakpoints : {
+	                    960: {
+	                        arrows: false
+	                    }
+	                }
+	            }).mount(window.splide.Extensions)
+	            
+	          } )
+	        </script>
+		</div>
+	</div>
+	<div class="learn red_block" style="position:relative;overflow:hidden;padding-top:0px;padding-bottom:90px">
+		<h4>\обучение\</h4>
+		<h1>В нашей студии</h1>
+		<h2>вы можете приобрести специальность мечты</h2>
+		<div class="slide_learn2 splide img_pc">
+	            <div class="splide__track">
+		            <div class="splide__list">
+		                <div class="splide__slide"><a href="#" class="a_learn" style="background-image:url(images/learn1.jpg);"><span>Визажист с нуля <br>до PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+		                <div class="splide__slide"><a href="#" class="a_learn" style="background-image:url(images/learn2.jpg);"><span>Бровист с нуля <br> до PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+		                <div class="splide__slide"><a href="#" class="a_learn" style="background-image:url(images/learn1.jpg);"><span>Визажист с нуля <br> до PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+	                </div>
+	            </div>
+	      	</div>
+	        <script>
+	          document.addEventListener( 'DOMContentLoaded', () => {
+	            var newslide = new Splide('.slide_learn2', {
+	                type: 'slide',
+	                gap: '1%',
+	                arrows: false,
+	                pagination: false,
+	                autoWidth: true,
+	                autoplay: false,
+	                interval: 3000,
+	                wheel: false,
+	                wheelSleep: 300,
+	                releaseWheel: false,
+	                pauseOnHover: false,
+	                focus: 0,
+	                omitEnd:false,
+	            }).mount()
+	            
+	          } )
+	        </script>
+	<div class="slide_learn_mobile img_mobile">
+        <div class="learn_mobile"><a href="#" class="a_learn"><img src="images/learn1.jpg" class="img_learn"><span>Визажист с нуля<br> до PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+        <div class="learn_mobile"><a href="#" class="a_learn"><img src="images/learn2.jpg" class="img_learn"><span>Визажист с нуля<br> до PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+        <div class="learn_mobile"><a href="#" class="a_learn"><img src="images/learn1.jpg"class="img_learn"><span>Визажист с нуля до<br> PRO</span><img src="images/arrow_line2.svg" class="img_learn_arrow"></a></div>
+    </div>
+		<table style="display:none">
+			<tr>
+				<td onmouseover="document.getElementById('learn1').style.visibility='visible'" onmouseout="document.getElementById('learn1').style.visibility='hidden'" style="position:relative;vertical-align:middle"><img src="images/akciya1.jpg" style="position:absolute;height:300px;top:-100px;left:20%;visibility:hidden" id="learn1"><a href="">Макияж для себя</a><sub>01</sub><a href="#" class="readmore2">Подробнее</a></td>
+			</tr>
+			<tr>
+				<td onmouseover="document.getElementById('learn2').style.visibility='visible'" onmouseout="document.getElementById('learn2').style.visibility='hidden'" style="position:relative"><img src="images/akciya1.jpg" style="position:absolute;height:300px;top:-100px;left:30%;visibility:hidden" id="learn2"><a href="">Визажист с нуля до PRO</a><sub>02</sub><a href="#" class="readmore2">Подробнее</a></td>
+			</tr>
+			<tr>
+				<td onmouseover="document.getElementById('learn3').style.visibility='visible'" onmouseout="document.getElementById('learn3').style.visibility='hidden'" style="position:relative"><img src="images/akciya1.jpg" style="position:absolute;height:300px;top:-100px;left:40%;visibility:hidden" id="learn3"><a href="">Бровист с нуля до PRO</a><sub>03</sub><a href="#" class="readmore2">Подробнее</a></td>
+			</tr>
+			<tr>
+				<td onmouseover="document.getElementById('learn4').style.visibility='visible'" onmouseout="document.getElementById('learn4').style.visibility='hidden'" style="position:relative"><img src="images/akciya1.jpg" style="position:absolute;height:300px;top:-100px;left:50%;visibility:hidden" id="learn4"><a href="">Визажист группа</a><sub>04</sub><a href="#" class="readmore2">Подробнее</a></td>
+			</tr>
+		</table>
+		<!--<br>
+		<center><a href="#" class="btn1"><span>Узнать подробнее</span></a></center>-->
+	</div>
+	<div class="blog white_block" style="position:relative">
+		<h4>\новости\</h4>
+		<h1>Новостной блог</h1>
+		<h2>TWINS BEAUTY HOUSE</h2>
+		<div class="news a_left">
+			<div class="photo">
+				<img src="images/img18.jpg">
+			</div>
+			<div class="news_name"><span class="h_cat">BEAUTY</span><span class="h_cat2">Естественность и минимализм - главные тренды последнего времени</span></div>
+			<div class="news_desc">максимально тонкое покрытие nude на ногтях поможет создать тот самый эффект «невидимого» маникюра</div>
+		</div>
+		<div class="news a_right">
+			<div class="photo">
+				<img src="images/img19.jpg">
+			</div>
+			<div class="news_name"><span class="h_cat">SALE</span><span class="h_cat2">Идеально ровный сияющий тон лица, минимум макияжа глаз...</span></div>
+			<div class="news_desc">и акцентные красные губы сейчас на пике популярности и такой образ будет совершенно точно смотреться дорого и гармонично на каждой девушке</div>
+		</div>
+		<center><a href="#" class="btn1"><span>Читать еще</span></a></center>
+	</div>
+	<div class="sertificat red_block" style="position:relative">
+		<h4>\подарочный сертификат\</h4>
+		<h1>Подарочный сертификат</h1>
+		<h2>Порадуйте близких хорошим подарком!</h2>
+		<a class="btn_sertificat_active" style="cursor:pointer" id="btn_sertificat1" onclick="this.className = 'btn_sertificat_active';document.getElementById('btn_sertificat2').className = 'btn_sertificat';document.getElementById('txt_sertificat').innerHTML='Вы можете приобрести подарочные сертификаты на услуги, продукт или курс любого номинала в нашем салоне или онлайн.';document.getElementById('img_sertificat').style.display='block';document.getElementById('img_sertificat2').style.display='none';">Сертификат на услугу</a><a class="btn_sertificat" style="cursor:pointer" id="btn_sertificat2" onclick="this.className = 'btn_sertificat_active';document.getElementById('txt_sertificat').innerHTML='Другой текст';document.getElementById('btn_sertificat1').className = 'btn_sertificat';document.getElementById('img_sertificat').style.display='none';document.getElementById('img_sertificat2').style.display='block';">Сертификат на сумму</a>
+		<!--<div class="line1">
+			<p>TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg">TWINS BEAUTY HOUSE <img src="images/mini_logo.svg"> СПЕЦПРЕДЛОЖЕНИЯ <img src="images/mini_logo.svg"></p>
+		</div>-->
+		<div id="img_sertificat">
+		<img src="images/sertificat_2.jpg" width="100%" class="img_pc">
+		<img src="images/s_mob1.jpg" width="100%" class="img_mobile">
+		</div>
+		<div id="img_sertificat2" style="display:none">
+		<img src="images/sertificat_2_1.jpg" width="100%" class="img_pc">
+		<img src="images/s_mob2.jpg" width="100%" class="img_mobile">
+		</div>
+		<span>
+			Сертификат TWINS BEAUTY HOUSE - подарок,
+который не оставит равнодушной ни одну девушку!
+		</span>
+		<span id="txt_sertificat">
+			Вы можете приобрести подарочные сертификаты на услуги, продукт или курс любого номинала в нашем салоне или онлайн.
+		</span>
+		<a href="#" class="readmore_white mob10" style="margin-top:20px;">Купить сертификат</a></span>
+	</div>
+	<div class="contacts white_block" style="position:relative;overflow:hidden">
+		<h4>\контакты\</h4>
+		<h1>Как проехать</h1>
+		<h2>И связаться с нами</h2>
+		<span class="address mob6">Новосибирск, ул. Ленина, 1 (этаж 1)</span>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A184716981b03c9e4977a32bcb03adc464f4c48f46c0414292d515ae508d76420&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+		<!--<img src="images/map.jpg" width="100%" class="img_pc">
+		<img src="images/map2.jpg" width="100%" class="img_mobile">-->
+		<span class="karta_mob">
+			Мы находимся в самом центре Новосибирска. Рядом с салоном есть несколько вариантов парковки: на улице Ленина и на Советской.
+		</span>
+		<div class="social_btns karta_mob2">
+			<h1>Мы с радостью ответим</h1>
+			<h2>На все ваши вопросы</h2>
+			<a href="#" class="whatsapp2"><font>whatsapp</font></a><a href="#" class="instagram2"><font>instagram</font></a><a href="#" class="telegram2"><font>telegram</font></a>
+		</div>
+	</div>
+	<div class="footer" style="position:relative">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram.svg"></a><a href="#"><img src="images/whatsapp.svg"></a><a href="#"><img src="images/instagram.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+	<div class="cookie_box" id="cookie_box" style="z-index:1000"><img src="images/cookie.png"><span>Мы заботимся о ваших данных и используем файлы cookie. Используя этот сайт, вы принимаете политику использования файлов cookie. <a href="" style="text-decoration:underline;">Узнать больше</a></span><br><a class="accept" onclick="hide_box()">Принять</a></div>
+	
+	<div id="box_container" class="box_container">
+		<div id="zakaz_skidka" class="zakaz_skidka">
+			<img src="images/close.svg" class="zakaz_done_close img_pc" style="position:absolute;right:20px;top:10px;cursor:pointer" onclick="document.getElementById('box_container').style.display='none';"><img src="images/close_popup.svg" class="zakaz_done_close img_mobile" style="position:absolute;right:20px;top:10px;cursor:pointer" onclick="document.getElementById('box_container').style.display='none';">
+			<div class="skidka1"><img src="images/skidka.jpg" class="img_pc" style="display:inline-block;width:100%"><img src="images/p1.jpg" class="img_mobile" style="display:inline-block;width:100%"></div><div class="skidka2" style=""><h3 style="padding-left:0;margin-left:0;text-align:left">Скидка на маникюр 10%</h3><br>Только сегодня по секретному промокоду скидка 10% на маникюр с покрытием, промокод придёт на почту, назови его администратору или укажи при записи на услугу<br><br>
+			<input type="text" placeholder="Ваш E-mail" class="skidka_email"><a href="" style="padding:16px;background-color:#841A10;color:#fff;font-size:14px" class="a_skidka">Отправить</a><br><br>
+			<font style="font-size:14px">Нажимая на кнопку “Отправить” Вы соглашаетесь<br> с <a href="" style="vertical-align:top;color:#841A10;text-decoration:underline;font-size:14px">политикой конфиденциальности</a> и даёте разрешение<br> на <a href="" style="vertical-align:top;color:#841A10;text-decoration:underline;font-size:14px">обработку персональных данных</a></font></div>
+		</div>
+		<script>
+			setTimeout("document.getElementById('box_container').style.display='block'", 3000);
+			setTimeout("document.getElementById('cookie_box').style.display='inline-block'", 3000);
+		</script>
+</body>
+</html>

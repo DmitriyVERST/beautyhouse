@@ -1,0 +1,516 @@
+<html>
+<head>
+<title>
+TWINS BEAUTY HOUSE
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='style.css' />
+<script src="jquery-3.7.0.min.js"></script>
+<script src="scripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- http://animate.style -->
+<script src="wow.min.js"></script> <!-- http://wowjs.uk -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="splide.min.js"></script>
+<script src="splide-extension-auto-scroll.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="slider/fotorama.js"></script>
+<link rel="stylesheet" type="text/css" href="slider/fotorama.css" />
+</head>
+<body>
+	<ul class="top_links for_mobile">
+		<li><a href="">INTRODUCING</a></li>
+		<li><a href="">Our very first facial collab</a></li>
+	</ul>
+	<ul class="top_links for_desctop">
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+		<li><a href="">INTRODUCING THE NEUSTROM FACIAL</a></li>
+		<li><a href="">Our very first facial collab with the one and only Brett Neustrom!</a></li>
+	</ul>
+	<div class="header-mobile">
+	<a href="" class="a_logo"><img src="images/logo.svg" class="logo"></a>
+	<a href="" class="cart"><img src="images/cart.svg"><span>1</span></a>
+		<div class="mobile">
+		    <div class="btn_mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		    </div>
+		    <nav>
+		        <div style="width:100%">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">О бренде</a></li>
+					<li onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'"><a href="">Услуги</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(1);"></li>
+					<div id="mob_sub1" style="height:auto;width:auto;overflow:auto"></div>
+					<li onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'"><a href="">Продукция</a><img src="images/right_arrow.png" class="arrow" onclick="hide_mob(2);"></li>
+					<div id="mob_sub2" style="height:auto;width:auto;overflow:auto"></div>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Галерея работ</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				
+		</div>
+		    </nav>
+		    	<ul id="sub1" class="sub_visible" onmouseover="document.getElementById('sub1').style.display='block'" onmouseout="document.getElementById('sub1').style.display='none'">
+					<li><a href="">Маникюр/Педикюр</a></li>
+					<li><a href="">Массаж</a></li>
+					<li><a href="">Макияж и укладка</a></li>
+					<li><a href="">Волосы</a></li>
+					<li><a href="">Оформление бровей</a></li>
+					<li><a href="">Наращивание ресниц</a></li>
+					<li><a href="">Косметология</a></li>
+					<li><a href="">Депиляция</a></li>
+					<li><a href="">Перманентный макияж</a></li>
+					<li><a href="">Обучение</a></li>
+				</ul>
+				<ul id="sub2" class="sub_visible" onmouseover="document.getElementById('sub2').style.display='block'" onmouseout="document.getElementById('sub2').style.display='none'">
+					<li><a href="">Шампунь</a></li>
+					<li><a href="">Кондиционер</a></li>
+					<li><a href="">Спрей</a></li>
+					<li><a href="">Комплексный уход</a></li>
+					<li><a href="">Наши подборки</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Лучшие товары</a></li>
+					<li><a href="">Акции</a></li>
+					<li><a href="">Все товары</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="fon">
+		<h3>Вся продукция</h3>
+	</div>
+	<script>
+		$('.mobile .btn_mobile').on('click', () => {
+	    $('.mobile div').toggleClass('active');
+	    $('.mobile nav').toggleClass('open');
+	    $('.mobile nav ul').toggleClass('show');
+	});
+	for (let a = 1; a <= $(".mobile ul li").length; a++){
+	    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+	}
+	</script>
+	<div class="cat_products">
+		<div class="slide2 splide">
+		            <div class="splide__track">
+			            <div class="splide__list">
+			                <div class="splide__slide"><a href="#"><img src="images/pr1.jpg"><span>INSIGHT<br>PPOFESSIONAL</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr2.jpg"><span>INSIGHT<br> PPOFESSIONAL</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr3.jpg"><span>DAVINES</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr4.jpg"><span>dr.sorbie</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr5.jpg"><span>PH</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr6.jpg"><span>matrix</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr1.jpg"><span>INSIGHT<br>PPOFESSIONAL</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr2.jpg"><span>INSIGHT<br> PPOFESSIONAL</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr3.jpg"><span>DAVINES</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr4.jpg"><span>dr.sorbie</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr5.jpg"><span>PH</span></a></div>
+			                <div class="splide__slide"><a href="#"><img src="images/pr6.jpg"><span>matrix</span></a></div>
+		                </div>
+		            </div>
+		      	</div>
+		        <script>
+		          document.addEventListener( 'DOMContentLoaded', () => {
+		            var newslide = new Splide('.slide2', {
+		                type   : 'loop',
+					  drag   : 'free',
+					  focus  : 'center',
+					  gap: '1%',
+					  autoScroll: {
+					    speed: 1,
+					    pauseOnHover: false,
+					  },
+					  arrows: false,
+	                pagination: false,
+	                autoWidth: true,
+	                autoplay: false,
+	                interval: 3000,
+	                wheel: false,
+	                wheelSleep: 300,
+	                releaseWheel: false,
+	                pauseOnHover: false,
+	                focus: 0,
+	                omitEnd:false,
+	            }).mount(window.splide.Extensions)
+		            
+		          } )
+		        </script>
+	</div>
+	<div class="filters" style="z-index:30000"><span class="pr_count">12 491 продукт</span><a class="filter_open"><img src="images/filters.png"> Фильтры  </a><span class="pr_favorite">По популярности <img src="images/listbox.png"></span>
+		<div class="box_filters_container" style="z-index:30000!important">
+		<div class="box_filters" id="box_filters">
+			<div class="filter_header">Фильтры<a><img src="images/close.svg" class="filter_close"></a></div>
+			<div class="filter_body filter_scroll">
+				<div>SALE</div>
+				<div class="f_active">В наличии</div>
+				<div class="filter_line"></div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Бальзам
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Кондиционер
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br>
+					</div>
+				<a class="filter_cat_header">Тип продукта <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Бальзам
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Кондиционер
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br>
+					</div>
+				<a class="filter_cat_header">Назначение <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Бальзам
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Кондиционер
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br>
+					</div>
+				<a class="filter_cat_header">Цвет <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Бальзам
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Кондиционер
+					</label><br><label>
+					  <input type='checkbox'>
+					  <span></span>
+					  Шампунь
+					</label><br>
+					</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+				<a class="filter_cat_header">Категория <span class="filter_arrow"></span></a>
+				<div class="filter_cat_body"><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 1
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 2
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 3
+				</label><br><label>
+				  <input type='checkbox'>
+				  <span></span>
+				  Пункт 4
+				</label><br>
+				</div>
+			</div>
+			<center><a href="#" class="btn3 filter_btn">Показать 100 товаров</a></cetner>
+		</div>
+		</div>
+	</div>
+	<script>
+	    $('.filter_cat_body').css({'display':'none'});  
+		$('.filter_cat_header').click(function(){
+		$(this).next('.filter_cat_body').slideToggle(0);
+		$(this).find('.filter_arrow').toggleClass('filter_arrow_active');
+		});
+		$('.filter_close').click(function(){
+		$('.box_filters_container').css({'display':'none'});
+		});
+		$('.filter_open').click(function(){
+		$('.box_filters_container').css({'display':'block'});
+		$('.box_filters').toggleClass('filter_active');
+		});
+		document.getElementById("box_filters").addEventListener("animationend", AnimationHandler, false);
+			function AnimationHandler () {
+			  // Удаляем класс с анимацией
+			  document.getElementById("box_filters").classList.remove('filter_active');
+			  
+			}
+	</script>
+	
+	<div class="products_box all">
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+					<div class="sale"><span class="sale1">50%</span><span class="sale2">SALE</span></div>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+					<div class="sale"><span class="sale1">50%</span><span class="sale2">SALE</span></div>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+			<div class="product">
+				<div class="photo">
+					<img src="images/product3.jpg">
+					<a href="#" class="btn_cart"></a>
+				</div>
+				<div class="pr_name">НЕСМЫВАЕМЫЙ КОНДИЦИОНЕР-УХОД ДЛЯ ВОЛОС</div>
+				<div class="pr_desc">kevin murphy thick again</div>
+				<div class="cena">
+					<span class="pr_cena1">4 527 ₽</span>
+					<span class="pr_cena2">4 527 ₽</span>
+				</div>
+			</div>
+		</div>
+		<center><a href="#" class="btn5" style="display:inline-block;margin-bottom:120px;width:98%"><span>Загрузить еще</span></a></center>
+	<div class="footer" style="position:relative">
+		<div class="footer_menu">
+			<ul>
+				<li class="h_li">ГЛАВНАЯ</li>
+				<li><a href="#">О бренде</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Продукция</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">УСЛУГИ</li>
+				<li><a href="#">Все услуги</a></li>
+				<li><a href="#">Макияж</a></li>
+				<li><a href="#">Маникюр</a></li>
+				<li><a href="#">Массаж</a></li>
+				<li><a href="#">Брови</a></li>
+			</ul>
+			<ul>
+				<li class="h_li">ПРОДУКЦИЯ</li>
+				<li><a href="#">Вся продукция</a></li>
+				<li><a href="#">Шампуни</a></li>
+				<li><a href="#">Кондиционеры</a></li>
+				<li><a href="#">Спреи</a></li>
+				<li><a href="#">Новинки</a></li>
+			</ul>
+		</div>
+		<div class="footer_subscribe">
+			<div class="subscribe_header">Подпишитесь на наши обновления</div>
+			<form>
+				<input type="text" placeholder="Ваш e-mail"> <a href="#">ПОДПИСАТЬСЯ</a>
+			</form>
+			<span class="politika">Нажимая кнопку “Отправить” Вы соглашаетесь с политикой конфиденциальности <br>и даёте разрешение на обработку персональных данных</span><br><br>
+		</div>
+		<div class="footer_social"><a href="#"><img src="images/telegram.svg"></a><a href="#"><img src="images/whatsapp.svg"></a><a href="#"><img src="images/instagram.svg"></a></div>
+		<div>
+			<span href="#" class="link_left">©Twins beauty house 2024. Все&nbsp;права&nbsp;защищены</span><a href="#" class="link_politika">Политика конфиденциальности</a>
+		</div>
+	</div>
+</body>
+</html>
